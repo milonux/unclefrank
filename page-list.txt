@@ -1,0 +1,5 @@
+http://webmamu.com/static/unclefrank/login.html
+http://webmamu.com/static/unclefrank/forgot-password.html
+http://webmamu.com/static/unclefrank/personal-details.html
+http://webmamu.com/static/unclefrank/register.html
+http://webmamu.com/static/unclefrank/verify.html

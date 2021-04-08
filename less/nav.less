@@ -1,0 +1,177 @@
+.navbar {
+	&.navbar-base {
+		background-color: @white;
+		margin-bottom: 0;
+		border: none;
+		border-bottom: 3px solid @brand-primary;
+		.border-radius(0);
+
+		@media @smOnly {
+			.container {
+				width: auto;
+			}
+		}
+
+
+		.navbar-header {
+			.navbar-toggle {
+				@media @xsOnly {
+					margin-top: 23px;
+				}
+			}
+			.navbar-brand {
+				height: auto;
+				padding-top: 28px;
+				padding-bottom: 18px;
+
+				@media @mdOnly {
+					img {
+						max-width: 150px;
+					}
+				}
+				@media @smMMOnly {
+					img {
+						max-width: 120px;
+					}
+				}
+				@media @smMOnly {
+					img {
+						max-width: 80px;
+					}
+				}
+				@media @xsOnly { 
+					padding-top: 15px;
+					padding-bottom: 15px;
+					img {
+						max-width: 130px;
+					}
+				}
+			}
+		}
+
+		.nav {
+			&.nav-main {
+				@media @xlg {
+					margin-top: 86px;
+				}
+				@media @mdOnly {
+					margin-top: 68px;
+				}
+				@media @smMMOnly {
+					margin-top: 57px;
+				}
+				@media @smMOnly {
+					margin-top: 41px;
+				}
+				@media @xsOnly {
+					margin-top: 0;
+				}
+				li {
+					a {
+						font-family: @Gotham-Medium;
+						font-size: 15px;
+						color: @title-color;
+						text-transform: uppercase;
+
+						@media @mdOnly {
+							font-size: 13px;
+						}
+						@media @smMMOnly {
+							font-size: 13px;
+							padding-left: 6px;
+							padding-right: 6px;
+						}
+						@media @smMOnly {
+							font-size: 13px;
+							padding-left: 6px;
+							padding-right: 6px;
+						}
+						@media @xsOnly {
+							text-align: center;
+						}
+
+					}
+				}
+				> li {
+					> a {
+						padding-top: 0;
+						padding-bottom: 0;
+						@media @xsOnly { 
+							padding-top: 10px;
+							padding-bottom: 10px;
+						}
+					}
+					&.active {
+						a {
+							background-color: @white;
+							color: #999;
+						}
+					}
+				}
+			}
+
+
+
+			&.nav-logs {
+				@media @xlg {
+					margin-top: 41px;
+				}
+				@media @mdOnly {
+					margin-top: 23px;
+				}
+				@media @smMMOnly {
+					margin-top: 12px;
+				}
+				@media @smMOnly {
+					margin-top: 0px;
+				}
+				@media @xsOnly {
+					border-top: 1px solid @border-color;
+					margin-bottom: 0;
+				}
+				> li {
+					display: block;
+					float: none;
+
+					> a {
+						font-family: @Gotham-Book;
+						font-size: 13px;
+						color: @text-lighter;
+						text-transform: uppercase;
+						padding-top: 10px;
+						padding-bottom: 10px;
+						text-align: right;
+
+						i {
+							margin-right: 5px;
+							@media @smMOnly {
+								margin-right: 0;
+							}
+						}
+						@media @smMMOnly {
+							padding-left: 7px;
+							padding-right: 7px;
+						}
+						@media @smMOnly {
+							padding-left: 6px;
+							padding-right: 6px;
+						}
+						@media @xsOnly {
+							text-align: center;
+						}
+					}
+
+					&.register {
+						> a {
+							background-color: @brand-primary;
+							color: @white;
+							text-align: center;
+							.border-radius(6px 6px 0 0);
+						}
+					}
+				}
+			}
+		}
+
+	}
+}

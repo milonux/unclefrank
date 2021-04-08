@@ -1,0 +1,282 @@
+
+.log-card {
+	.crossbrowseropacity (@white, .95);
+	padding: 50px;
+}
+
+.user-dashpage {
+	background-color: #ececec;
+	width: 100%;
+	min-height: 100%;
+	padding: 80px 0 0;
+
+	&.bg-dark {
+		h1, h2, h3, h4, p, span {
+			color: @white;
+		}
+	}
+}
+
+.dashpage-brand {
+	margin: 0 auto;
+	display: inline-block;
+}
+
+.ud-title {
+	font-size: 28px;
+	margin-top: 32px;
+}
+.ud-tagline {
+	font-size: 16px;
+	margin-top: 0;
+	line-height: 1.3;
+	color: #666;
+}
+
+
+.btn-app-store {
+	background-image: url('../images/btn-app.png');
+	background-position: center left;
+	background-repeat: no-repeat;
+	width: 188px;
+	height: 64px;
+	display: inline-block;
+}
+
+.input-card {
+	background-color: @white;
+	margin-top: 30px;
+	overflow: hidden;
+	border: 1px solid @border-color;
+
+	.input-grid {
+		&:before, &:after {
+			content: " ";
+			display: table;
+		}
+		&:after {
+			clear: both;
+		}
+		.grid-row {
+			&:before, &:after {
+				content: " ";
+	    		display: table;
+			}
+			&:after {
+				clear: both;
+			}
+			.ifield {
+				float: left;
+				position: relative;
+				width: 100%;
+				height: 56px;
+				padding: 10px 20px;
+				margin-top: -1px;
+				border: 0;
+				border-top: 1px solid @border-color;
+				border-bottom: 1px solid @border-color;
+				.border-radius(0);
+			}
+			textarea {
+				&.ifield {
+					min-height: 148px;
+				}
+			}
+		}
+
+		&.one {
+			.grid-row {
+				.ifield {
+					width: 100%;
+				}
+			}
+		}
+
+		&.two {
+			.grid-row {
+				.ifield {
+					width: 50%;
+					border-left: 1px solid @border-color;
+					&:nth-child(1){
+						border-left: 0;
+					}
+				}
+			}
+		}
+
+		&:last-child {
+			.grid-row {
+				.ifield {
+					border-bottom: 0;
+				}
+			}
+		}
+	}
+}
+
+
+
+.me {
+	&.divider {
+		&.horizontal {
+			display: block;
+			position: relative;
+		    line-height: 1;
+		    overflow: hidden;
+		    text-align: center;
+		    white-space: nowrap;
+		    margin: 35px auto;
+
+		    &:before, &:after {
+		    	content: " ";
+		    	display: block;
+		    	width: 50%;
+		    	height: 1px;
+		    	background-color: @white;
+		    	position: absolute;
+		    	margin-bottom: -3px;
+		    	top: auto;
+		    	bottom: 50%;
+		    }
+
+		    &:before {		    			    	
+		    	left: -30px;
+		    }
+		    &:after {
+		    	right: -30px;
+		    }
+		}
+	}
+}
+
+.button-lists {
+	&.center {
+		text-align: center;
+		.btn {
+			margin: 0 5px;
+		}
+	}
+}
+
+.sign-meta-btnlist {
+	.btn {
+		.opacity(0.2);
+
+		&:hover, &:focus {
+			.opacity(1);
+		}
+	}
+}
+
+
+.me-dash-footer {
+	width: 100%;
+	padding-top: 100px;
+
+	@media @minHeightLg {
+		position: fixed;
+		bottom: 0;
+		left: 0;
+	}
+	.me-dash-fooer-in {
+		color: @white;
+		border-top: 1px solid rgba(255, 255, 255, 0.1);
+		padding: 20px 0;
+	}
+
+	.me-dash-foo {
+		li {
+			a {
+				font-family: @Gotham-Book;
+				color: @white;
+				font-size: 12px;
+			}
+		}
+	}
+
+	.copy-text {
+		font-family: @Gotham-Book;
+		color: @white;
+		font-size: 12px;
+	}
+
+	&.footer-inmodal {
+		position: absolute;
+		width: 100%;
+		left: 0;
+		bottom: 0;
+		z-index: 1060;
+	}
+}
+
+.bg-lighter {
+	.me-dash-footer {
+		.me-dash-fooer-in {
+			color: @title-color;
+			border-top: 1px solid rgba(51, 51, 51, 0.1);
+		}
+		.me-dash-foo {
+			li {
+				a {
+					color: @title-color;
+				}
+			}
+		}
+		.copy-text {
+			color: @title-color;
+		}
+	}
+}
+
+.fb-link {
+	font-family: @montserrat-regular;
+	color: #5E83D1;
+}
+
+.form-control {
+	&.mobile-verify {
+		color: #333;
+		font-family: @Gotham-Medium;
+		.placeholder(#333)
+	}
+	&.bold-value {
+		color: #333;
+		font-family: @Gotham-Medium;
+		.placeholder(#333)
+	}
+}
+.btn {
+	&.log-fb {
+		position: relative;
+		overflow: hidden;
+		i {
+			bottom: -3px;
+		    display: block;
+		    font-size: 40px;
+		    left: 0;
+		    line-height: 1;
+		    position: absolute;
+		    text-align: center;
+		    width: 56px;
+		    &:after {
+		    	content: " ";
+		    	width: 1px;
+		    	border-right: 1px solid darken(@facebook, 7%);
+		    	position: absolute;
+		    	right: 0;
+		    	bottom: 0;
+		    	top: -50px;
+		    }
+		}
+	}
+}
+.log-for-sm {
+	max-width: 362px;
+	margin: 0 auto;
+}
+.log-card-holder {
+	&.log-card-holder-md {
+		max-width: 700px;
+		margin: 0 auto;
+	}
+}

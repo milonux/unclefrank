@@ -1,0 +1,13 @@
+.has-feedback {
+	position: relative;
+}
+.has-feedback .form-control-feedback {
+	position: absolute;
+	top: 50% !important;
+	-webkit-transform: -webkit-translateY(-50%);
+	-moz-transform: -moz-translateY(-50%);
+	transform: translateY(-50%);
+}
+.has-feedback p.text-danger {
+	display: none !important;
+}
